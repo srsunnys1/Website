@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,7 +41,7 @@
 </head>
 
 <body id="page-top">
-
+    <!--  form action="/GetPageContent" method="GET"--> 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -69,13 +72,19 @@
     </nav>
 
     <header>
+  
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
                     <div class="header-content">
                         <div class="header-content-inner">
-                            <h1>Say no to Queues !!</h1>
-                            <h3>Order using the bot at selected joints</h3>
+      
+
+                            <h1><c:out value="${Data.homeH1}"/></h1>
+                             
+
+                            
+                            <h3><c:out value="${Data.homeH2}"/></h3>
                             <a href="#download" class="btn btn-outline btn-xl page-scroll">Get Started</a>
                         </div>
                     </div>
@@ -273,7 +282,7 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
-
+<!--  /form-->
 </body>
 
 </html>

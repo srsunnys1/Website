@@ -464,7 +464,8 @@ body {
 blockquote {
     font-style: italic;
     font-family: Georgia;
-    color: #999999;    
+    color: #999999; 
+    margin-top: 30px;   
     margin-bottom: 100px;
 }
 
