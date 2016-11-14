@@ -59,7 +59,7 @@ public class GetPageContent extends HttpServlet {
 			String query = "select * from pageinfo";
 	        Statement stmt = connection.createStatement();
 	        ResultSet rs = stmt.executeQuery(query);
-	        while (rs.next()) {
+	        while (rs.next()){
 	        	contentData.put(rs.getString("content_id"), rs.getString("field_value"));
 	         }
 	       System.out.println(Arrays.asList(contentData));
