@@ -65,7 +65,7 @@ public class GetPageContent extends HttpServlet {
 	       System.out.println(Arrays.asList(contentData));
 	       request.setAttribute("Data", contentData);
 	       RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-	       rd.forward(request, response);	       
+	       rd.forward(request,response);	       
 	        
 		} catch (Exception e) {
 			e.printStackTrace();
